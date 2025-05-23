@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+   
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="container fade-in">
+      <header>
+        <h1>Rock Paper Scissors</h1>
+        <p>Choose your weapon to start playing</p>
+      </header>
+  
+      <div class="scoreboard">
+        <div class="score player">
+          <h2>You</h2>
+          <div class="score-number">0</div>
+        </div>
+        <div class="score draws">
+          <h2>Draws</h2>
+          <div class="score-number">0</div>
+        </div>
+        <div class="score computer">
+          <h2>Computer</h2>
+          <div class="score-number">0</div>
+        </div>
+      </div>
+  
+      <div class="game-result">
+        Make your first move!
+      </div>
+  
+      <div class="choices">
+        <div class="choice" data-choice="rock">
+          <span>✊</span>
+        </div>
+        <div class="choice" data-choice="paper">
+          <span>✋</span>
+        </div>
+        <div class="choice" data-choice="scissors">
+          <span>✌️</span>
+        </div>
+      </div>
+  
+      <button class="reset-button">Reset Game</button>
+  
+      <div class="game-history">
+        <h3 class="history-title">Game History</h3>
+        <div class="history-list">
+          <!-- Game history will be populated dynamically -->
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer">
+      <p>© 2025 Rock Paper Scissors Game</p>
+    </div>
+    <script type="module" src="/rock.js"></script>
+  </body>
+</html>
